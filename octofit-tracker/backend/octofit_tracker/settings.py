@@ -79,7 +79,7 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "djongo",
+        "ENGINE": "",  # Empty engine since pymongo will be used directly
         "NAME": "octofit_db",
         "HOST": "localhost",
         "PORT": 27017,
@@ -129,4 +129,4 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*", "orange-funicular-pp47wj74x4wf6jxr-8000.app.github.dev"]
